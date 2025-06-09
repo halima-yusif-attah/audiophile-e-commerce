@@ -22,7 +22,10 @@ export function CheckoutProvider({ children }) {
     if (!formData.name) errors.name = 'Name is required';
     if (!formData.email) errors.email = 'Email is required';
     if (!formData.address) errors.address = 'Address is required';
-    // Add more validations as needed
+    if (!formData.city) errors.city = 'City is required';
+    if (!formData.postalCode) errors.postalCode = 'Postal code is required';
+    if (!formData.country) errors.country = 'Country is required';
+  
     return errors;
   };
 
@@ -33,7 +36,6 @@ export function CheckoutProvider({ children }) {
       return;
     }
 
-    // Simulate order processing
     setOrderSummary({
       ...formData,
       ...cartSummary,
@@ -57,4 +59,3 @@ export function CheckoutProvider({ children }) {
   );
 }
 
-// export const useCheckout = () => useContext(CheckoutContext);

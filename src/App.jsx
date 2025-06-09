@@ -27,11 +27,6 @@ function App() {
             <Navigation />
         <Outlet />
             <Routes>
-              {/* <Route path="/" element={<Home />} />
-              <Route path="headphones/:id" element={<DetailsComponent />} />
-              <Route path="headphones" element={<Headphones />} />
-               */}
-
 <Route path="headphones/:id" element={<DetailsComponent />} />
             <Route path="headphones" element={<Headphones />} />
             <Route path="earphones/:id" element={<DetailsComponent />} />
