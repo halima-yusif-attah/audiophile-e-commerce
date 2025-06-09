@@ -1,0 +1,210 @@
+
+:root {
+    /* Media query breakpoints */
+    --breakpoint-mobile: 24.25rem; /* 38.75rem converted to rem */
+    --breakpoint-tablet: 38.25rem; /* 61.25rem converted to rem */
+  }
+  
+  /* Media query helpers */
+  @media screen and (min-width: var(--breakpoint-mobile)) {
+    .mq-mobile {
+      /* Mobile styles */
+    }
+  }
+  
+  @media screen and (min-width: var(--breakpoint-tablet)) {
+    .mq-tablet {
+      /* Tablet styles */
+    }
+  }
+  
+  /* Font size utilities (equivalent to calculateRem function) */
+  .font-size-12 {
+    font-size: 0.75rem; /* 12px */
+  }
+  
+  .font-size-13 {
+    font-size: 0.8125rem; /* 13px */
+  }
+  
+  .font-size-14 {
+    font-size: 0.875rem; /* 14px */
+  }
+  
+  .font-size-15 {
+    font-size: 0.9375rem; /* 15px */
+  }
+  
+  .font-size-16 {
+    font-size: 1rem; /* 16px */
+  }
+  
+  .font-size-18 {
+    font-size: 1.125rem; /* 18px */
+  }
+  
+  .font-size-24 {
+    font-size: 1.5rem; /* 24px */
+  }
+  
+  .font-size-28 {
+    font-size: 1.75rem; /* 28px */
+  }
+  
+  .font-size-36 {
+    font-size: 2.25rem; /* 36px */
+  }
+  
+  .font-size-40 {
+    font-size: 2.5rem; /* 40px */
+  }
+  
+  .font-size-56 {
+    font-size: 3.5rem; /* 56px */
+  }
+  
+  /* Flexbox utilities */
+  .flex {
+    display: flex;
+  }
+  
+  .flex-column {
+    flex-direction: column;
+  }
+  
+  .flex-row {
+    flex-direction: row;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  .align-center {
+    align-items: center;
+  }
+  
+  /* Grid utilities */
+  .grid {
+    display: grid;
+  }
+  
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .gap-2 {
+    gap: 1rem;
+  }
+  
+  /* Position utilities */
+  .position-relative {
+    position: relative;
+  }
+  
+  .position-absolute {
+    position: absolute;
+  }
+  
+  /* Visibility utilities */
+  .hide {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  /* Responsive utilities */
+  @media screen and (min-width: 24.25rem) {
+    .hidden-mobile {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 24.25rem) {
+    .hidden-desktop {
+      display: none;
+    }
+  }
+  
+  /* Utility classes for common styles */
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+  
+  .text-white {
+    color: var(--clr-white);
+  }
+  
+  .text-orange {
+    color: var(--clr-orange);
+  }
+  
+  .bg-orange {
+    background-color: var(--clr-orange);
+  }
+  
+  .bg-white {
+    background-color: var(--clr-white);
+  }
+  
+  .border-radius {
+    border-radius: var(--border-radius);
+  }
+  
+  /* Button utilities */
+  .btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary {
+    background-color: var(--clr-orange);
+    color: var(--clr-white);
+  }
+  
+  .btn-secondary {
+    background-color: var(--clr-white);
+    color: var(--clr-almost-black);
+    border: 2px solid var(--clr-almost-black);
+  }
+  
+  /* Form utilities */
+  .form-control {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--clr-light-gray);
+    border-radius: var(--border-radius);
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-control:focus {
+    outline: none;
+    border-color: var(--clr-orange);
+  }
+  
+  /* Animation utilities */
+  .fade-in {
+    animation: fadeIn 0.3s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

@@ -1,0 +1,33 @@
+
+:root {
+  /* Colors */
+  --clr-orange: hsl(22, 65%, 57%);
+  --clr-almost-black: hsla(0, 0%, 6%, 0.955);
+  --clr-light-gray: hsl(0, 0%, 95%);
+  --clr-very-light-gray: hsl(0, 0%, 98%);
+  --clr-peach: hsl(21, 94%, 75%);
+  --clr-black: hsl(0, 0%, 0%);
+  --clr-white: hsl(0, 0%, 100%);
+  
+  /* Typography */
+  --font-primary: 'Manrope', sans-serif;
+  --font-size-base: 16px;
+  --font-size-sm: 14px;
+  --font-size-lg: 20px;
+  
+  /* Spacing */
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+  
+  /* Border Radius */
+  --border-radius: 8px;
+}
+
+/* Dark mode variables */
+[data-theme="dark"] {
+  --clr-almost-black: hsla(0, 0%, 95%, 0.955);
+  --clr-light-gray: hsl(0, 0%, 5%);
+  --clr-very-light-gray: hsl(0, 0%, 3%);
+}

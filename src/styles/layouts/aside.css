@@ -1,0 +1,44 @@
+/* src/styles/layouts/aside.css */
+.aside {
+  max-width: 44rem; /* 69.375rem converted to rem */
+  margin-inline: auto;
+  padding-block: 3.125rem; /* 5rem converted to rem */
+}
+
+@media screen and (min-width: 38.25rem) { /* 61.25rem converted to rem */
+  .aside {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 3.125rem; /* 5rem converted to rem */
+    padding-block: 6.5625rem; /* 10.5rem converted to rem */
+  }
+  
+  .aside-content-container {
+    flex: 1 1 45%;
+  }
+  
+  .aside-image-container {
+    flex: 1 1 65%;
+  }
+}
+
+.aside-heading {
+  font-size: 1.75rem; /* base.$fs-28 converted to rem */
+  text-align: center;
+  text-transform: uppercase;
+  margin-block-end: 1.25rem;
+}
+
+@media screen and (min-width: 38.25rem) {
+  .aside-heading {
+    font-size: 2.5rem; /* base.$fs-40 converted to rem */
+    text-align: left;
+    letter-spacing: 0.0875rem; /* 1.43px converted to rem */
+  }
+}
+
+.aside-content-text {
+  text-align: center;
+}

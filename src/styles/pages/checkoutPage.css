@@ -1,0 +1,206 @@
+
+.checkout-page {
+    background-color: var(--clr-light-gray);
+  }
+  
+  .checkout {
+    background-color: var(--clr-white);
+    top: 2.5rem; /* 4rem converted to rem */
+    position: relative;
+    margin-block-end: 2.5rem; /* 4rem converted to rem */
+    padding-inline: 0;
+  }
+  
+  .checkout .return {
+    padding-inline: 0;
+  }
+  
+  .checkout .btn-return {
+    top: 0;
+  }
+  
+  @media screen and (min-width: 24.25rem) {
+    .checkout {
+      padding-inline: 0.9375rem; /* 1.5rem converted to rem */
+    }
+  }
+  
+  @media screen and (min-width: 38.25rem) {
+    .checkout {
+      top: 0;
+    }
+  }
+  
+  .checkout-title {
+    padding-block-end: 0.625rem; /* 1rem converted to rem */
+    font-size: 1.75rem; /* 28px converted to rem */
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-inline: 0.625rem; /* 1rem converted to rem */
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    border: none;
+    padding-block: 0.625rem; /* 1rem converted to rem */
+  }
+  
+  .form-input-container {
+    display: flex;
+    flex-direction: column;
+    margin-block-end: 1.25rem; /* 2rem converted to rem */
+  }
+  
+  .form-input {
+    padding: 0.625rem; /* 1rem converted to rem */
+    border: 1px solid var(--clr-light-gray);
+    margin-top: 0.3125rem; /* 0.5rem converted to rem */
+  }
+  
+  label {
+    font-size: 0.75rem; /* 12px converted to rem */
+    font-weight: 800;
+  }
+  
+  .checkout-headers {
+    font-size: 0.8125rem; /* 13px converted to rem */
+    letter-spacing: 0.05859375rem; /* 0.93px converted to rem */
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  
+  .form-input-container-radio {
+    border: 1px solid var(--clr-almost-black);
+    padding: 0.625rem 0.3125rem; /* 1rem 0.5rem converted to rem */
+    margin-block-end: 0.625rem; /* 1rem converted to rem */
+  }
+  
+  .form-inputs-wrapper {
+    @media screen and (min-width: 24.25rem) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 0.625rem; /* 1rem converted to rem */
+    }
+  }
+  
+  .shipping-address {
+    @media screen and (min-width: 24.25rem) {
+      grid-area: 1/1/1/3;
+    }
+  }
+  
+  .payments {
+    @media screen and (min-width: 24.25rem) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+  
+  .emoney-payment {
+    @media screen and (min-width: 24.25rem) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.625rem; /* 1rem converted to rem */
+    }
+  }
+  
+  .payment-method {
+    @media screen and (min-width: 24.25rem) {
+      grid-template-columns: 1fr;
+      flex: 1 1 50%;
+    }
+  }
+  
+  .payment-title {
+    font-size: 0.75rem; /* 12px converted to rem */
+    margin-block-end: 0.5625rem; /* 0.875rem converted to rem */
+    text-transform: capitalize;
+  }
+  
+  .emoney-payment-number {
+    @media screen and (min-width: 24.25rem) {
+      flex: 1 1 50%;
+    }
+  }
+  
+  .payment-methods {
+    border: none;
+  }
+  
+  .cash-payments {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.625rem; /* 1rem converted to rem */
+  }
+  
+  @media screen and (min-width: 24.25rem) {
+    .cash-payments {
+      flex-direction: row;
+      gap: 0.625rem; /* 1rem converted to rem */
+    }
+  }
+  
+  .hide-card-details {
+    display: none;
+  }
+  
+  .totals {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  @media screen and (min-width: 38.25rem) {
+    .checkout-page {
+      display: flex;
+      gap: 1.25rem; /* 2rem converted to rem */
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-block-start: 5rem; /* 8rem converted to rem */
+    }
+  }
+  
+  .checkout-return {
+    position: absolute;
+    top: 1.875rem; /* 3rem converted to rem */
+  }
+  
+  .main-checkout-wrapper {
+    @media screen and (min-width: 38.25rem) {
+      flex: 1 1 60%;
+    }
+  }
+  
+  .checkout-overlay {
+    top: 0;
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    background-color: var(--clr-light-gray);
+  }
+  
+  .body-hide-overflow {
+    overflow: hidden;
+  }
+  
+  /* Form validation styles */
+  fieldset:invalid ~ fieldset {
+    display: none;
+  }
+  
+  .error__alert {
+    display: block;
+    color: red;
+  }
+  
+  .hide-error {
+    display: none;
+  }

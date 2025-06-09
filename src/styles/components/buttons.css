@@ -1,0 +1,47 @@
+/* src/styles/components/buttons.css */
+.btns {
+    background-color: inherit;
+    border: none;
+    outline: none;
+  }
+  
+  .btns:focus,
+  .btns:hover {
+    color: var(--clr-white);
+    cursor: pointer;
+    outline: dashed currentColor;
+    outline-offset: 0.15em;
+  }
+  
+  .btn-view-product,
+  .btn-add-to-cart {
+    padding: 0.5rem 0.75rem;
+    background: var(--clr-orange);
+    font-size: var(--fs-14);
+    display: block;
+    margin-inline: auto;
+    max-width: 6.25rem;
+    color: var(--clr-white);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-view-product:hover,
+  .btn-add-to-cart:hover {
+    background: hsl(22, 65%, 52%);
+  }
+  
+  @media screen and (min-width: 38.25rem) {
+    .btn-view-product,
+    .btn-add-to-cart {
+      margin-inline-start: 0;
+    }
+  }
+  
+  .btn-menu-control {
+    @media screen and (min-width: 38.25rem) {
+      display: none;
+    }
+  }

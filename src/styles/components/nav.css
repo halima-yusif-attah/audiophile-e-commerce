@@ -1,0 +1,53 @@
+/* src/styles/components/nav.css */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem; /* 1rem converted to rem */
+  }
+  
+  .nav-list {
+    display: flex;
+    gap: 1.5rem; /* Adjusted spacing */
+  }
+  
+  .nav-link {
+    color: var(--clr-white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: var(--clr-orange);
+  }
+  
+  .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: var(--clr-white);
+  }
+  
+  @media screen and (max-width: 24.25rem) {
+    .mobile-menu-btn {
+      display: block;
+    }
+  
+    .nav-list {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: var(--clr-almost-black);
+      flex-direction: column;
+      padding: 1rem;
+      gap: 1rem;
+    }
+  
+    .nav-list.active {
+      display: flex;
+    }
+  }
