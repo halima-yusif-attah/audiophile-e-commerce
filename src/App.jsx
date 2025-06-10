@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom
 import { ToastContainer } from 'react-toastify';
 import Navigation from './components/shared/Navigation';
 import Footer from './components/shared/Footer';
-import { CheckoutProvider } from './context/checkoutContext';
+import { CheckoutProvider } from './context/CheckoutContext';
 import { CartProvider } from './context/CartContext';
 import DetailsComponent from './components/pages/Detailed/DetailsComponent';
 import Headphones from './components/pages/headphones/Headphones';
