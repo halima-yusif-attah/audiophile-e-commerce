@@ -6,7 +6,7 @@ import Aside from '../../shared/Aside'
 function Home() {
     return (
         <>
-        <h1 className=''> welcome Home</h1>
+     
             <Header />
             <Main />
             <Aside />

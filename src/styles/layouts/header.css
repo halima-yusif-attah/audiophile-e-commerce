@@ -5,6 +5,7 @@
 
 .header {
   background-color: var(--clr-almost-black);
+  width: 100vw;
 }
 
 /* Navigation styles */

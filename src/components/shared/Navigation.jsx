@@ -10,7 +10,8 @@ function Navigation() {
     const [menu, setMenu] = useState(false)
     const { isCartOpen, handleCart, cartItems } = useContext(CartContext)
 
-    function handleMenu(evt) {
+    // evt
+    function handleMenu() {
         setMenu(!menu)
     }
 

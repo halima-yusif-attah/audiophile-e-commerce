@@ -1,80 +1,130 @@
-/* src/styles/components/hero.css */
-.hero {
+
+  
+  .hero-btn:hover {
+    background: hsl(22, 65%, 52%);
+  }
+
+
+  ***********************
+  .hero {
     background-image: url('../../assets/home/mobile/image-header.jpg');
     background-position: 100% 100%;
     background-repeat: no-repeat;
     background-size: cover;
   }
   
-  @media screen and (min-width: 24.25rem) {
+  @media (min-width: 620px) {
     .hero {
       background-image: url('../../assets/home/tablet/image-header.jpg');
       background-position: 100% 60%;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
   
-  @media screen and (min-width: 38.25rem) {
+  @media (min-width: 980px) {
     .hero {
       background-size: contain;
+     
     }
   }
   
   .hero-content-container-shared {
-    padding-block: 1.375rem;
-    padding-inline: 0.9375rem;
-    max-width: 14.8125rem;
+    padding-block: 2.25rem;
+    padding-inline: 1.5rem;
+    max-width: 23.6875rem;
     margin-inline: auto;
   }
   
-  @media screen and (min-width: 24.25rem) {
+  @media (min-width: 620px) {
     .hero-content-container-shared {
-      padding-block: 3.75rem;
+      padding-block: 6rem;
     }
   }
   
   .hero-container {
-    max-width: 43.375rem;
+    max-width: 69.375rem;
     margin-inline: auto;
   }
   
   .hero-content-container {
-    padding-block: 3.75rem 3.875rem;
-    padding-inline: 0.9375rem;
-    max-width: 17.3125rem;
+    padding-block: 6rem 6.2rem;
+    padding-inline: 1.5rem;
+    max-width: 27.75rem;
     margin-inline: auto;
   }
   
-  @media screen and (min-width: 38.25rem) {
+  @media (min-width: 980px) {
     .hero-content-container {
       margin-inline-start: 0;
-      padding-block: 4rem 7.75rem;
+      padding-block: 6.4rem 12.4rem;
     }
   }
   
   .hero-title {
-    font-size: var(--fs-14);
-    margin-bottom: 1rem;
-    color: var(--clr-almost-black);
-    font-weight: 700;
-  }
-  
-  .hero-text {
-    font-size: var(--fs-14);
-    color: var(--clr-almost-black);
-    margin-bottom: 1.5rem;
-  }
-  
-  .hero-btn {
-    font-size: var(--fs-14);
-    padding: 0.5rem 1rem;
-    background: var(--clr-orange);
-    color: var(--clr-white);
+    font-size: 0.875rem; /* base.$fs-14 */
+    color: #ffffff;
+    opacity: 0.4;
     text-transform: uppercase;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    letter-spacing: 10px;
+    text-align: center;
+    font-weight: 400;
+    margin-block: 1rem;
   }
   
-  .hero-btn:hover {
-    background: hsl(22, 65%, 52%);
+  @media (min-width: 980px) {
+    .hero-title {
+      text-align: start;
+    }
   }
+  
+  .hero-title-secondary {
+    font-size: 2.25rem; /* base.$fs-36 */
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  
+  @media (min-width: 620px) {
+    .hero-title-secondary {
+      font-size: 3.5rem; /* base.$fs-56 */
+      line-height: 1.04;
+    }
+  }
+  
+  @media (min-width: 980px) {
+    .hero-title-secondary {
+      text-align: start;
+      letter-spacing: 2px;
+    }
+  }
+  
+  .hero-title-secondary-shared {
+    font-size: 1.75rem; /* base.$fs-28 */
+    letter-spacing: 2px;
+  }
+  
+  @media (min-width: 620px) {
+    .hero-title-secondary-shared {
+      font-size: 2.5rem; /* base.$fs-40 */
+    }
+  }
+  
+  .hero-content {
+    font-size: 0.9375rem; /* base.$fs-15 */
+    color: #ffffff;
+    opacity: 0.75;
+    text-align: center;
+    line-height: 1.6;
+    margin-block: 2rem;
+  }
+  
+  @media (min-width: 980px) {
+    .hero-content {
+      text-align: start;
+      padding-right: 2.5rem;
+    }
+  }
+  

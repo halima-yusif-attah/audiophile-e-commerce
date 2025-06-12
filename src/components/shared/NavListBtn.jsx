@@ -7,7 +7,7 @@ function NavListBtn(props) {
 
             <Link to={`${props.address}`}
                 role={props.roleItem}
-                className='nav-list-item-btn'
+                className='nav-list-item-btn nav-link'
                 onClick={props.onclick}>
                 {props.name}
             </Link>
