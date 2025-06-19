@@ -27,7 +27,7 @@
     position: relative;
     top: -1.25rem; /* -2rem converted to rem */
     text-transform: uppercase;
-    color: var(--clr-white);
+    /* color: var(--clr-white); */
     font-size: var(--fs-14);
     margin-bottom: 1rem;
   }
@@ -49,4 +49,22 @@
       display: block;
       padding: 0.5rem;
     }
+  }
+
+  .primary-nav-image {
+    position: relative;
+    width: 50%;
+    margin: auto;
+    top: -2rem;
+    object-fit: contain;
+  }
+  
+  @media (min-width: 980px) {
+    .primary-nav-image {
+      width: 54%;
+      top: -4rem;
+    }
+  }
+  .pt-10 {
+     padding-top: 10rem;
   }

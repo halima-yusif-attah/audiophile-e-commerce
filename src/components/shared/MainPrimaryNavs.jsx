@@ -9,7 +9,8 @@ import Forward from '../../assets/shared/desktop/icon-arrow-right.svg'
 function MainPrimaryNavs() {
   const shortpath = "/"
   return (
-    <div className='primary-nav'>
+    // primary-nav
+    <div className='pt-10'>
 
       <ul className='primary-nav-list'>
 

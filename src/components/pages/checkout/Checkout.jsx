@@ -249,7 +249,7 @@ function Checkout() {
         (formData.touched.cardNumber && formData.cardNumber.length < 6) ||
         (formData.touched.cardNumber && formData.cardNumber.length > 12)
       ) {
-        errors.cardNumber = 'Card number must be between 6 and 12 characters in length'
+        errors.cardNumber = 'Card number must be between 16 characters in length'
       }
 
       //validate card pin
@@ -279,15 +279,18 @@ function Checkout() {
   })
 
   return (
-    <main className='main container  checkout-page' ref={checkoutRef}>
+    
+    <main className='main container checkout-page ' ref={checkoutRef}>
       <div className="checkout-overlay"></div>
-      <div className='main-checkout-wrapper'>
-        <div className='return checkout-return'>
+      
+      
+      <div className='main-checkout-wrapper '>
+      {/* <div className='return checkout-return'>
           <Link className='btn btn-return' to="/">Go back</Link>
           <h1 className='sr-only'>Audiophile entertainment products</h1>
-        </div>
+        </div> */}
 
-        <div className='container checkout border-radius'>
+        <div className='container checkout border-radius '>
 
           <h2 className='checkout-title' >Checkout</h2>
 
@@ -309,7 +312,7 @@ function Checkout() {
                   <input type="text"
                     name="name"
                     id="name"
-                    placeholder="Alex Ward"
+                    placeholder="Halima Yusif "
                     autoComplete='name'
                     onChange={onChange}
                     value={name}
@@ -333,7 +336,7 @@ function Checkout() {
                   <input type="email"
                     name="email"
                     id="email"
-                    placeholder="alexei@mail.com"
+                    placeholder="halima@gmail.com"
                     autoComplete="email"
                     onChange={onChange}
                     value={email}
@@ -358,7 +361,7 @@ function Checkout() {
                   <input type="tel"
                     name="phone"
                     id="phone"
-                    placeholder="+27832678210"
+                    placeholder="+233542678210"
                     autoComplete='tel'
                     onChange={onChange}
                     value={phone}
@@ -397,7 +400,7 @@ function Checkout() {
                   <input type="text"
                     name="address"
                     id="address"
-                    placeholder="1137 Williams Avenue"
+                    placeholder="11 industrial area"
                     autoComplete='street-address'
                     onChange={onChange}
                     value={address}
@@ -450,7 +453,7 @@ function Checkout() {
                   <input type="text"
                     name="city"
                     id="city"
-                    placeholder='New York'
+                    placeholder='Accra'
                     autoComplete='city'
                     onChange={onChange}
                     value={city}
@@ -477,7 +480,7 @@ function Checkout() {
                   <input type="text"
                     name="country"
                     id="country"
-                    placeholder='United States'
+                    placeholder='Ghana'
                     autoComplete='country'
                     onChange={onChange}
                     value={country}
@@ -573,7 +576,7 @@ function Checkout() {
                     <input type="number"
                       name="cardNumber"
                       id="card-number"
-                      placeholder='238521993'
+                      placeholder='4444 4444 4444 44444'
                       onChange={onChange}
                       value={cardNumber}
                       required
@@ -643,6 +646,7 @@ function Checkout() {
         handleBack={handleBack} />
 
     </main>
+   
   )
 }
 

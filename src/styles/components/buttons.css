@@ -1,4 +1,4 @@
-/* src/styles/components/buttons.css */
+/* 
 .btns {
     background-color: inherit;
     border: none;
@@ -44,4 +44,160 @@
     @media screen and (min-width: 38.25rem) {
       display: none;
     }
+  }*/
+
+
+
+  /* CSS3 using CSS variables from variables.css */
+
+.btns {
+  background-color: inherit;
+  border: none;
+  outline: none;
+}
+
+.btns:focus,
+.btns:hover {
+  color: var(--clr-white);
+  cursor: pointer;
+  outline: dashed currentColor;
+  outline-offset: 0.15em;
+}
+
+.btn-view-product,
+.btn-add-to-cart {
+  padding: 0.8rem 1rem;
+  background: var(--clr-orange);
+  font-size: var(--font-size-sm);
+  display: block;
+  margin-inline: auto;
+  max-width: 10rem;
+  color: var(--clr-white);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn-view-product:focus,
+.btn-view-product:hover,
+.btn-add-to-cart:focus,
+.btn-add-to-cart:hover {
+  cursor: pointer;
+  outline: dashed currentColor;
+  outline-offset: -0.5em;
+}
+
+@media (min-width: 980px) {
+  .btn-view-product,
+  .btn-add-to-cart {
+    margin-inline-start: 0;
   }
+
+  .btn-menu-control {
+    display: none;
+  }
+
+  .nav-list-item-btn,
+  .logo-btn {
+    color: var(--clr-white);
+  }
+}
+
+.primary-nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  position: relative;
+  top: -1rem;
+  outline: none;
+  border: none;
+  color: var(--clr-orange);
+  text-transform: uppercase;
+}
+
+.primary-nav-btn:focus,
+.primary-nav-btn:hover {
+  cursor: pointer;
+  outline: dashed currentColor;
+  outline-offset: 0.35em;
+}
+
+.nav-list-item-btn,
+.logo-btn {
+  color: var(--clr-almost-black);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-list-item-btn:focus,
+.nav-list-item-btn:hover,
+.logo-btn:focus,
+.logo-btn:hover {
+  cursor: pointer;
+  outline: dashed currentColor;
+  outline-offset: 0.15em;
+}
+
+.logo-btn {
+  color: var(--clr-white);
+}
+
+.btn-products {
+  display: block;
+  margin-inline: auto;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  margin-block: 3rem;
+}
+
+.btn-bg-black {
+  background-color: var(--clr-almost-black);
+}
+
+.btn-bg-transparent {
+  background-color: inherit;
+  border: 1px solid var(--clr-almost-black);
+  color: var(--clr-almost-black);
+  margin: 0;
+}
+
+.btn-social:focus,
+.btn-social:hover {
+  cursor: pointer;
+  outline: dashed currentColor;
+  outline-offset: 0.15em;
+}
+
+.btn-cart {
+  border: none;
+  background-color: inherit;
+  outline: none;
+  padding: 1rem;
+}
+
+.btn-cart:focus,
+.btn-cart:hover {
+  cursor: pointer;
+  outline: dashed currentColor;
+  outline-offset: -0.5em;
+}
+
+.btn-add-to-cart {
+  flex: 1 1 60%;
+  background-color: var(--clr-orange);
+  color: var(--clr-white);
+}
+
+.btn-add-to-cart:focus,
+.btn-add-to-cart:hover {
+  cursor: pointer;
+  outline: dashed var(--clr-orange);
+  outline-offset: 0.15em;
+}
+
+.hide {
+  display: none;
+}

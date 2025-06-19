@@ -12,7 +12,8 @@ import TabletYx1 from '../../../../assets/home/tablet/image-earphones-yx1.jpg'
 import MobileYx1 from '../../../../assets/home/mobile/image-earphones-yx1.jpg'
 
 // gsap.registerPlugin(ScrollTrigger)
-function Products(props) {
+// props
+function Products() {
 
     const productsRef = useRef([])
     productsRef.current = []

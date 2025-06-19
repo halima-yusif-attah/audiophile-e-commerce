@@ -80,9 +80,10 @@
   }
   
   .form-inputs-wrapper {
-    @media screen and (min-width: 24.25rem) {
+    /* 24.25rem */
+    @media screen and (min-width: 26.5625rem) {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      /* grid-template-columns: 1fr 1fr; */
       column-gap: 0.625rem; /* 1rem converted to rem */
     }
   }

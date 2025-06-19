@@ -1,4 +1,4 @@
-/* src/styles/layouts/footer.css */
+/* 
 .footer {
   background-color: var(--clr-almost-black);
   color: var(--clr-white);
@@ -65,4 +65,162 @@
   padding-top: 2rem;
   border-top: 1px solid var(--clr-light-gray);
   color: var(--clr-light-gray);
+} */
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  background-color: #101010;
+  color: #ffffff;
+  margin-block-start: 2rem;
+}
+
+.footer-container {
+  max-width: 69.375rem;
+  margin-inline: auto;
+  padding-block: 3.25rem;
+  position: relative;
+}
+
+.footer-container::before {
+  position: absolute;
+  content: "";
+  width: 6.31rem;
+  height: 4px;
+  background-color: #D87D4A;
+  left: 50%;
+  margin-left: -3.17rem;
+  top: 0rem;
+}
+
+@media (min-width: 620px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .footer-container::before {
+    left: 0;
+    margin-left: 2.5rem;
+  }
+}
+
+.logo-footer-btn img {
+  margin: auto;
+}
+
+@media (min-width: 620px) {
+  .logo-footer-btn img {
+    margin: 0;
+  }
+}
+
+@media (min-width: 620px) {
+  .footer-logo-container {
+    grid-area: 1/1/1/5;
+    margin: 0;
+  }
+}
+
+@media (min-width: 980px) {
+  .footer-logo-container {
+    grid-area: 1/1/1/3;
+  }
+}
+
+.footer-nav {
+  margin-block: 3rem 2rem;
+}
+
+.footer-nav .nav-list-item-btn {
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (min-width: 620px) {
+  .footer-nav {
+    margin-block: 0;
+    grid-area: 2/1/2/4;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+@media (min-width: 980px) {
+  .footer-nav {
+    grid-area: 1/3/1/5;
+  }
+}
+
+.footer-text,
+.copyright {
+  text-align: center;
+  line-height: 1.7;
+  font-size: 0.9375rem;
+}
+
+@media (min-width: 620px) {
+  .footer-text {
+    grid-area: 3/1/3/5;
+    text-align: left;
+  }
+}
+
+@media (min-width: 980px) {
+  .footer-text {
+    grid-area: 2/1/2/3;
+  }
+}
+
+.copyright {
+  margin-block: 2rem;
+}
+
+@media (min-width: 620px) {
+  .copyright {
+    grid-area: 4/1/4/3;
+    text-align: left;
+    margin-block: 0;
+  }
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 620px) {
+  .social-media {
+    grid-area: 4/3/4/5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 980px) {
+  .social-media {
+    grid-area: 3/3/3/5;
+  }
+}
+
+.btn-social {
+  color: #D87D4A;
+}
+
+.btn-social:hover img,
+.btn-social:focus img {
+  filter: invert(55%) sepia(71%) saturate(425%) hue-rotate(337deg) brightness(89%) contrast(90%);
 }

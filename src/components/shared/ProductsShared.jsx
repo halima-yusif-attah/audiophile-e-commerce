@@ -10,6 +10,9 @@ function ProductsShared(props) {
     const itemInCart = cartItems.find(item => item.id === props.address);
 const quantity = itemInCart?.quantity || 1;
 
+console.log("props - productshared", props);
+
+
 const handleAdd = () => {
   updateQuantity(props.address, quantity + 1);
 };
